@@ -26,6 +26,13 @@ public class Bike extends Veichle{
 		}
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Bike [hasSideCar=" + hasSideCar + ", isSportsBike=" + isSportsBike + ", isACOn=" + isACOn
+				+ ", maxNumberOfPassengers=" + maxNumberOfPassengers + "]";
+	}
+
 	//Getters and Setters
 	public boolean isHasSideCar() {
 		return hasSideCar;

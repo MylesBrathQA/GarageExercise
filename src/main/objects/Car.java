@@ -19,5 +19,12 @@ public class Car extends Veichle {
 		this.numberOfDoors = 3;
 		
 	}
+
+	//Methods
+	@Override
+	public String toString() {
+		return "Car [numberOfDoors=" + numberOfDoors + ", isSportsCar=" + isSportsCar + ", isElectricCar="
+				+ isElectricCar + ", maxNumberOfPassengers=" + maxNumberOfPassengers + "]";
+	}
 	
 }

@@ -14,10 +14,15 @@ public class Van  extends Veichle{
 	}
 
 	//Methods
+	@Override
+	public String toString() {
+		return "Van [vanSize=" + vanSize + ", isPickup=" + isPickup + ", maxNumberOfPassengers=" + maxNumberOfPassengers
+				+ "]";
+	}
+	
 	public String getVanSize() {
 		return vanSize;
 	}
-
 
 	public void setVanSize(String vanSize) {
 		this.vanSize = vanSize;
