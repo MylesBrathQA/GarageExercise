@@ -7,8 +7,8 @@ public class Van  extends Veichle{
 	
 	
 	//Constructors
-	public Van(int numberOfWheels, int maxNumberOfPassengers, int topSpeed, int price) {
-		super(numberOfWheels, maxNumberOfPassengers, topSpeed, price);
+	public Van(int numberOfWheels, int maxNumberOfPassengers) {
+		super(numberOfWheels, maxNumberOfPassengers);
 		this.vanSize = "Medium";
 		this.isPickup = true;
 	}

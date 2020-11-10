@@ -12,11 +12,12 @@ public class Car extends Veichle {
 		this.numberOfWheels = 4;
 	}
 	
-	public Car(int numberOfWheels, int maxNumberOfPassengers, int topSpeed, int price){
-		super(numberOfWheels, maxNumberOfPassengers, topSpeed, price);
+	public Car(int numberOfWheels, int maxNumberOfPassengers){
+		super(numberOfWheels, maxNumberOfPassengers);
 		this.isElectricCar = true;
 		this.isSportsCar = true;
 		this.numberOfDoors = 3;
+		
 	}
 	
 }

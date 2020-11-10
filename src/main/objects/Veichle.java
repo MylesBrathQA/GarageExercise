@@ -14,13 +14,10 @@ public class Veichle {
 		super();
 	}
 	
-	public Veichle(int numberOfWheels, int maxNumberOfPassengers, int topSpeed, int price){
+	public Veichle(int numberOfWheels, int maxNumberOfPassengers){
 		super();
 		this.numberOfWheels = numberOfWheels;
 		this.maxNumberOfPassengers = maxNumberOfPassengers;
-		this.topSpeed = topSpeed;
-		this.price = price;
-		this.isEngineEngaged = false;
 	}
 	
 	//Methods
@@ -47,7 +44,11 @@ public class Veichle {
 	public int getPrice() {
 		return price;
 	}
-	
+
+	public int getMaxNumberOfPassengers() {
+		return maxNumberOfPassengers;
+	}
+
 	public void setPrice(int price) {
 		this.price = price;
 	}

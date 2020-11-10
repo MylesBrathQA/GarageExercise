@@ -1,5 +1,7 @@
 package main;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 
 import main.objects.Bike;
@@ -13,23 +15,26 @@ public class Runner {
 		ArrayList<Veichle> Garage = new ArrayList<>();	
 		
 		
-		Car carPorsche = new Car(4, 2, 150, 20);
-		Bike bikeYamaha = new Bike(2, 2, 160, 12);
-		Van vanMercedes = new Van(4, 6 , 100, 25);
+		Car carPorsche = new Car(4, 2);
+		Bike bikeYamaha = new Bike(2, 2);
+		Van vanMercedes = new Van(4, 6);
+		Car carVauxhall = new Car(4, 5);
 		
 		Garage.add(carPorsche);
 		Garage.add(bikeYamaha);
 		Garage.add(vanMercedes);
+		Garage.add(carVauxhall);
 		
 		//System.out.println(Garage.size());
 		
-		int sum = 0;
+		double totalPrice = 0;
 		for(Veichle handle : Garage) {
-			sum += handle.getPrice();
-			System.out.println(sum);
+			double cost = handle.getMaxNumberOfPassengers() * 3.13;
+			totalPrice += cost;
 			}
+		totalPrice = BigDecimal.valueOf(totalPrice).setScale(3, RoundingMode.HALF_UP).doubleValue();
 		
-		System.out.println("The total bill for all Veichles parked here is: £" + sum);
+		System.out.println("The total bill for all Veichles parked here is: £" + totalPrice);
 		
 	}
 

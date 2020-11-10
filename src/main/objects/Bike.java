@@ -11,8 +11,8 @@ public class Bike extends Veichle{
 		super();
 	}
 	
-	public Bike(int numberOfWheels, int maxNumberOfPassengers,  int topSpeed, int price) {
-		super(numberOfWheels, maxNumberOfPassengers, topSpeed, price);
+	public Bike(int numberOfWheels, int maxNumberOfPassengers) {
+		super(numberOfWheels, maxNumberOfPassengers);
 		this.hasSideCar = false;
 		this.isSportsBike = true;
 	}
