@@ -1,6 +1,6 @@
 package main.objects;
 
-public class Veichle {
+public abstract class Veichle {
 	//Attributes
 	protected int numberOfWheels;
 	protected int topSpeed;
