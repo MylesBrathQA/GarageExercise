@@ -7,15 +7,17 @@ public class Veichle {
 	protected boolean isEngineEngaged;
 	protected boolean isACOn = false;
 	protected int price;
+	protected int maxNumberOfPassengers;
 
 	//Constructors
 	public Veichle() {
 		super();
 	}
 	
-	public Veichle(int numberOfWheels, int topSpeed, int price){
+	public Veichle(int numberOfWheels, int maxNumberOfPassengers, int topSpeed, int price){
 		super();
 		this.numberOfWheels = numberOfWheels;
+		this.maxNumberOfPassengers = maxNumberOfPassengers;
 		this.topSpeed = topSpeed;
 		this.price = price;
 		this.isEngineEngaged = false;
@@ -42,8 +44,16 @@ public class Veichle {
 		return topSpeed;
 	}
 
-	public float getPrice() {
+	public int getPrice() {
 		return price;
+	}
+	
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public void honkHorn() {
+		System.out.println("HOOOOOONK");
 	}
 	
 	
